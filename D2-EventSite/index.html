@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+
+    <title>Event Invitation</title>
+</head>
+<body>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                    <div class="show-on-small">
+                        <li class="menu-bar"><i class="fa fa-bars"></i></li>
+                        <li> <button class="btn register-btn" id="register-btn">Register</button></li>
+                    </div>
+                <div class="nav-tab hide-on-small">
+                    <li class="active"><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">The Party</a></li>
+                    <li><a href="#" class="nav-link">Details</a></li>
+                </div>
+                
+            </ul>
+        </nav>     
+    <main>
+        <section class="section1">
+            <!-- <button id="register-btn">Click me</button> -->
+            <div class="overlay">
+                <div class="container">
+                    <p>Hi, I am Snoopy</p>
+                    <h3>It's my Birthday</h3>
+                    <p><time datetime="25-12-2020">25<sup>th</sup> December, 2020</time></p>
+                    <button class="btn register-btn">R S V P</button>
+                </div>
+            </div>
+        </section>
+        <div class="register" id="register">
+            <div class="content">
+                <h3>Register for this Event</h3>
+                <span class="close"><i class="fa fa-close"></i></span>
+                <form>
+                    <!-- <fieldset> -->
+                    <!-- <legend>R.S.V.P.</legend> -->
+                    <label for="fname">First Name :</label><input type="text" name="fname" id="fname"><br>
+                    <label for="lname">Last Name :</label><input type="text" name="lname" id="lname"><br>
+                    <label for="email">Email :</label><input type="email" name="email" id="email"><br>
+                    <label for="sreq">Special Request :</label><input type="text" name="sreq" id="sreq"><br>
+                    <input type="submit" value="submit">
+                    <!-- </fieldset> -->
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i> by Divay</p>
+    </footer>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>
