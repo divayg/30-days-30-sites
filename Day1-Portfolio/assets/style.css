@@ -72,6 +72,7 @@ body{
 }
 section{
     min-height: 100vh;
+    padding:5px;
 }
 .about{
     /*margin-top:80px;*/
@@ -165,6 +166,7 @@ section{
 
 .skills{
     background:#E7DFDD;
+    
 }
 .portfolio{
     background:#F4F4F4;
@@ -173,11 +175,11 @@ section{
     background:#C5C1C0;
 }
 
-.work-in-progress{
+ .work-in-progress{
     color:#0ee0fcf8;
     text-align:center;
     /* background: rgba(255,255,255,0.5) */
-}
+} 
 
 /***** * Media file * ****/
 
