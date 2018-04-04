@@ -24,6 +24,8 @@ h1,h2,h3,h4,h5,h6{
     height:100%;
     padding:20px;
 }
+/***** TODO : Make mobile nav ***/
+
 .navbar{
     display:flex;
     align-items:center;
@@ -88,6 +90,9 @@ section{
     .l7{
         order:2;
     }
+    .navbar{
+        flex-direction: column;
+    }
 }
 
 
@@ -97,6 +102,8 @@ section{
     background:#225;
     padding:10px;
     position:fixed;
+    top:0;
+    left:0;
 }
 .navbar-logo h1{
     font-size: 1.8em;
@@ -172,9 +179,14 @@ section{
     font-size:3em;
     width:25%;
     margin: 30px auto;
-    background:rgba(162, 162, 177, 0.712);
+    background:rgba(184, 184, 184, 0.596);
+    border:1px solid rgba(68, 67, 67, 0.747);
     border-radius:50px 0;
     color:#225;
+    padding:5px;
+}
+.products h2:hover,.contact h2:hover{
+    background:inherit;
 }
 .products h3{
     font-size:1.8em;
@@ -187,6 +199,8 @@ section{
 }
 .product-img{
     width:100%;
+    border-radius:10px;
+    box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
 }
 .contact{
     padding:20px;
@@ -213,6 +227,7 @@ section{
     margin:10px 5px;
     border-radius:0px 15px;
     font-size:1.2em;
+    color:#225;
 }
 .contact-form form input[type="submit"]{
     width:20%;
@@ -234,10 +249,17 @@ section{
     .products h2,.contact h2{
         width:80%;
     }
+    .contact-form form{
+        width:100%;
+    }
     .contact-form form label{
         width:90%;
     }
     .contact-form form input,textarea{
         width:90%;
+        margin:10px 0px;
+    }
+    .contact-form form input[type="submit"]{
+        width:80%;
     }
 }
