@@ -12,9 +12,10 @@ navbar.addEventListener("mouseover",()=>(navbar.style.left="0px"));
 navbar.addEventListener("mouseout",()=>(navbar.style.left=`-${Math.floor(navShift)}px`));
 
 let menuBar=document.querySelector(".menu-bar");
-menuBar.addEventListener("click",()=>{
+menuBar.addEventListener("click",(e)=>{
     navbar.style.display="flex";
     navbar.style.left=navbar.style.left=="0px"?"-250px":"0px";
+    e.preventDefault();
 });
 menuBar.addEventListener("mouseout",()=>(navbar.style.left="-250px"));
 
@@ -108,7 +109,8 @@ $(window).scroll(function() {
         var win = $(window);
         var cards=$(".service");
         var outerBar= $(".outer-bar");
-        var percentage=$(".percentage")
+        var percentage=$(".percentage");
+        var portfolioCards=$('.portfolio-wrapper a');
 
 win.scroll(function(event) {
   
@@ -117,16 +119,23 @@ win.scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("slideInRight"); 
     } 
-
   });
 
+  portfolioCards.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.find(".info").addClass("info-display");
+    } 
+    else{
+        el.find(".info").removeClass("info-display");
+    }
+  });
   outerBar.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("outer-bar-animate"); 
       percentage.css("display","block");
     } 
-
   });
   
 });
